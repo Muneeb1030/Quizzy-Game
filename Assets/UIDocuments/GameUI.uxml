@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UIDocuments/GameUI.uss?fileID=7433441132597879392&amp;guid=31f02f0d0b684d345bb5205aa32fe9b9&amp;type=3#GameUI" />
+    <ui:VisualElement name="MainContainer" class="container--main">
+        <ui:VisualElement name="Header" class="container-main--header" style="justify-content: space-between;">
+            <ui:VisualElement name="LeftSeparator" class="container-main-header--separator" />
+            <ui:Label tabindex="-1" text="QUIZZY GAME" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font-definition: initial; -unity-font: resource(&apos;Fonts/Rajdhani-Bold&apos;); color: rgb(27, 27, 27); -unity-font-style: bold; font-size: 48px; width: 30%; height: 100%; -unity-text-align: middle-center;" />
+            <ui:VisualElement name="RightSeparator" class="container-main-header--separator" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Feedback" class="container-main--feedback" />
+        <ui:VisualElement name="Body" class="container-main--body" />
+    </ui:VisualElement>
+    <ui:VisualElement name="DragContainer" class="container--drag" />
+</ui:UXML>
