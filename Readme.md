@@ -12,7 +12,6 @@ Welcome to the Quizzy Game! This Unity 2D game challenges players to match icons
 - [Development Setup](#development-setup)
 - [Assets](#assets)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Getting Started
 
@@ -71,8 +70,3 @@ If you'd like to contribute to the development of this game, please follow these
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
 3. Make your changes and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-# Quizzy-Game
