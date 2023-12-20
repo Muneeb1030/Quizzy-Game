@@ -76,6 +76,7 @@ internal class DragManipulator : PointerManipulator
         if(target.worldBound.Overlaps(vedropzone.worldBound))
         {
             vedropzone.Add(target);
+
             target.style.left = vedropzone.contentRect.center.x - target.layout.width / 2;
             target.style.top = vedropzone.contentRect.center.y - target.layout.height / 2;
         }

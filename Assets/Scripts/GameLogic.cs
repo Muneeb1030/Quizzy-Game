@@ -1,18 +1,79 @@
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class GameLogic : MonoBehaviour
 {
-    private VisualElement veroot;
-    private VisualElement vetesticon;
+    public List<Question> questions = new List<Question>();
 
-    private void OnEnable()
+    Question currentQuestion;
+    public Question CurrentQuestion
     {
-        veroot = GetComponent<UIDocument>().rootVisualElement;
-        vetesticon = veroot.Q<VisualElement>("testIcon");
+        get
+        {
+            return currentQuestion;
+        }
+    }
 
-        vetesticon.AddManipulator(new DragManipulator(veroot));
+    int currentQuestionIndex = 0;
+    public int CurrentQuestionIndex
+    {
+        get
+        {
+            return currentQuestionIndex + 1;
+        }
+    }
 
+    string currentHint;
+    public string CurrentHint
+    {
+        get
+        {
+            return currentHint;
+        }
+    }
 
+    int currentHintIndex = 0;
+    public int CurrentHintIndex
+    {
+        get
+        {
+            return currentHintIndex + 1;
+        }
+    }
+
+    public void InitializeContent()
+    {
+        currentQuestion = questions[currentQuestionIndex];
+        currentHint = currentQuestion.Hints[currentHintIndex];
+    }
+
+    public bool IsAnswerCorrect(string answer)
+    {
+        return currentQuestion.answer == answer;
+    }
+
+    public void HandleCorrectAnswer()
+    {
+        NextQuestion();
+    }
+
+    private void NextQuestion()
+    {
+        currentQuestion = questions[++currentQuestionIndex];
+
+        currentHintIndex = 0;
+        currentHint = currentQuestion.Hints[currentHintIndex];
+    }
+
+    public void HandleWrongAnswer()
+    {
+        if(currentHintIndex < 2)
+        {
+            currentHint = currentQuestion.Hints[++currentHintIndex];
+        }
+        else
+        {
+            NextQuestion();
+        }
     }
 }

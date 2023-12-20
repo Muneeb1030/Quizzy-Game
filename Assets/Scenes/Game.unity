@@ -226,6 +226,8 @@ GameObject:
   - component: {fileID: 754329581}
   - component: {fileID: 754329580}
   - component: {fileID: 754329582}
+  - component: {fileID: 754329584}
+  - component: {fileID: 754329583}
   m_Layer: 5
   m_Name: MainPanel
   m_TagString: Untagged
@@ -276,6 +278,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5db273626170fdf4395b8574ac63d2d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questions:
+  - {fileID: 11400000, guid: 4d32be9fa187fe64f973a8a364a3766f, type: 2}
+  - {fileID: 11400000, guid: 606745f61ef6d7c478d04e22e6d60688, type: 2}
+  - {fileID: 11400000, guid: 3ec27afb44988ce49945678b95862f86, type: 2}
+--- !u!114 &754329583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754329579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa81a3e70a3d36945891cc70b8c59b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 754329584}
+--- !u!114 &754329584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754329579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802810adf4022424ab9a8ea9431d5674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  game: {fileID: 754329582}
+  ui: {fileID: 754329583}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

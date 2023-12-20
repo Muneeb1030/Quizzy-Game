@@ -8,7 +8,7 @@
         </ui:VisualElement>
         <ui:VisualElement name="Feedback" class="container-main--feedback">
             <ui:Label tabindex="-1" text="QUESTION NO: 01" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Question" class="container-feedback--question" />
-            <ui:Label tabindex="-1" text="Stupid Little Start Text" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Feed" class="container-feedback--question container-feedback--feed" />
+            <ui:Label tabindex="-1" text="Stupid Little Start Text" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Feed" class="container-feedback--feed" />
         </ui:VisualElement>
         <ui:VisualElement name="Body" class="container-main--body">
             <ui:VisualElement name="LeftContainer" class="container-body--contentcontainer">
@@ -25,12 +25,12 @@
                 <ui:VisualElement style="width: 70%; height: 40%;">
                     <ui:Label tabindex="-1" text="Time: 30 sec" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Time" />
                     <ui:VisualElement style="flex-grow: 0; flex-direction: row; justify-content: space-between;">
-                        <ui:Label tabindex="-1" text="Hint" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                        <ui:Label tabindex="-1" text="Hint: 01" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hintnum" style="-unity-font-style: normal;" />
                         <ui:Button text="NEXT HINT" parse-escape-sequences="true" display-tooltip-when-elided="true" name="nexthint" style="background-color: rgb(13, 13, 13); color: rgb(255, 255, 228); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
                     </ui:VisualElement>
-                    <ui:Label tabindex="-1" text="Starting little stupid Text" parse-escape-sequences="true" display-tooltip-when-elided="true" name="question" style="-unity-font-style: normal; font-size: 18px;" />
+                    <ui:Label tabindex="-1" text="Starting little stupid Text" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hint" style="-unity-font-style: normal; font-size: 18px;" />
                 </ui:VisualElement>
-                <ui:VisualElement name="VisualElement" style="width: 70%; height: 40%; align-items: center; border-left-color: rgb(13, 13, 13); border-right-color: rgb(13, 13, 13); border-top-color: rgb(13, 13, 13); border-bottom-color: rgb(13, 13, 13); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; justify-content: center;">
+                <ui:VisualElement style="width: 70%; height: 40%; align-items: center; border-left-color: rgb(13, 13, 13); border-right-color: rgb(13, 13, 13); border-top-color: rgb(13, 13, 13); border-bottom-color: rgb(13, 13, 13); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; justify-content: center;">
                     <ui:VisualElement name="DropZone" style="width: 150px; height: 80px; background-color: rgb(13, 13, 13); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;" />
                     <ui:Label tabindex="-1" text="Drag The Icon Here" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 20px;" />
                 </ui:VisualElement>
