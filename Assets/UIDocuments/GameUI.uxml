@@ -8,7 +8,7 @@
         </ui:VisualElement>
         <ui:VisualElement name="Feedback" class="container-main--feedback">
             <ui:Label tabindex="-1" text="QUESTION NO: 01" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Question" class="container-feedback--question" />
-            <ui:Label tabindex="-1" text="Stupid Little Start Text" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Feed" class="container-feedback--feed" />
+            <ui:Label tabindex="-1" text="Stupid Little Start Text" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Feed" class="container-feedback--feed" style="visibility: hidden;" />
         </ui:VisualElement>
         <ui:VisualElement name="Body" class="container-main--body">
             <ui:VisualElement name="LeftContainer" class="container-body--contentcontainer">
@@ -17,8 +17,8 @@
                     <ui:VisualElement name="testIcon" style="flex-grow: 0; background-image: resource(&apos;Icon&apos;); width: 64px; height: 64px; position: absolute; top: 160px; left: 320px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;" />
                     <ui:VisualElement style="flex-grow: 0; background-image: resource(&apos;Icon&apos;); width: 64px; height: 64px; position: absolute; top: 74px; left: 180px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;" />
                     <ui:VisualElement style="flex-grow: 0; background-image: resource(&apos;Icon&apos;); width: 64px; height: 64px; position: absolute; top: 58px; left: 48px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;" />
-                    <ui:VisualElement style="flex-grow: 0; background-image: resource(&apos;Icon&apos;); width: 64px; height: 64px; position: absolute; top: 160px; left: 75px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;" />
-                    <ui:VisualElement style="flex-grow: 0; background-image: resource(&apos;Icon&apos;); width: 64px; height: 64px; position: absolute; top: 25px; left: 310px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;" />
+                    <ui:VisualElement style="flex-grow: 0; background-image: resource(&apos;Icons/tower&apos;); width: 64px; height: 64px; position: absolute; top: 160px; left: 75px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;" />
+                    <ui:VisualElement style="flex-grow: 0; background-image: resource(&apos;Icons/paint&apos;); width: 64px; height: 64px; position: absolute; top: 25px; left: 310px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;" />
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="RightContainer" class="container-body--contentcontainer" style="justify-content: center;">
@@ -31,7 +31,7 @@
                     <ui:Label tabindex="-1" text="Starting little stupid Text" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hint" style="-unity-font-style: normal; font-size: 18px;" />
                 </ui:VisualElement>
                 <ui:VisualElement style="width: 70%; height: 40%; align-items: center; border-left-color: rgb(13, 13, 13); border-right-color: rgb(13, 13, 13); border-top-color: rgb(13, 13, 13); border-bottom-color: rgb(13, 13, 13); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; justify-content: center;">
-                    <ui:VisualElement name="DropZone" style="width: 150px; height: 80px; background-color: rgb(13, 13, 13); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;" />
+                    <ui:VisualElement name="DropZone" style="width: 150px; height: 80px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; border-left-color: rgb(13, 13, 13); border-right-color: rgb(13, 13, 13); border-top-color: rgb(13, 13, 13); border-bottom-color: rgb(13, 13, 13); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px;" />
                     <ui:Label tabindex="-1" text="Drag The Icon Here" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 20px;" />
                 </ui:VisualElement>
             </ui:VisualElement>

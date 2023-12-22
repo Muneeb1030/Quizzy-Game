@@ -59,10 +59,14 @@ public class GameLogic : MonoBehaviour
 
     private void NextQuestion()
     {
-        currentQuestion = questions[++currentQuestionIndex];
+        ++currentQuestionIndex;
+        if (questions.Count > currentQuestionIndex)
+        {
+            currentQuestion = questions[currentQuestionIndex];
 
-        currentHintIndex = 0;
-        currentHint = currentQuestion.Hints[currentHintIndex];
+            currentHintIndex = 0;
+            currentHint = currentQuestion.Hints[currentHintIndex];
+        }
     }
 
     public void HandleWrongAnswer()

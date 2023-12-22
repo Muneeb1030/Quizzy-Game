@@ -3,6 +3,7 @@ using UnityEngine.UIElements;
 
 internal class DragManipulator : PointerManipulator
 {
+    private Controller _controller;
     private VisualElement veroot;
     private VisualElement vedragzone;
     private VisualElement vedropzone;
@@ -14,8 +15,9 @@ internal class DragManipulator : PointerManipulator
     private Vector2 startPosGlobal;
     private Vector2 startPosLocal;
 
-    public DragManipulator(VisualElement root)
+    public DragManipulator(VisualElement root, Controller controller)
     {
+        _controller = controller;
         veroot = root;
         vedragzone = veroot.Q<VisualElement>("DragZone");
         vedropzone = veroot.Q<VisualElement>("DropZone");
@@ -64,7 +66,6 @@ internal class DragManipulator : PointerManipulator
 
         target.style.left = target.layout.x + offset.x;
         target.style.top = target.layout.y + offset.y;
-        
     }
 
     private void OnPointerUp(PointerUpEvent evt)
@@ -79,6 +80,8 @@ internal class DragManipulator : PointerManipulator
 
             target.style.left = vedropzone.contentRect.center.x - target.layout.width / 2;
             target.style.top = vedropzone.contentRect.center.y - target.layout.height / 2;
+
+            _controller.CheckAnswer((target.userData as Question).answer);
         }
         else
         {
