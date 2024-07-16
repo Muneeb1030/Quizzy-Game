@@ -1,21 +1,8 @@
 # Quizzy Game
 
-## Overview
-
 Welcome to the Quizzy Game! This Unity 2D game challenges players to match icons with statements by dragging and dropping them into the correct answer region.
 
-## Table of Contents
-
-- [Getting Started](#getting-started)
-- [Game Features](#game-features)
-- [How to Play](#how-to-play)
-- [Development Setup](#development-setup)
-- [Assets](#assets)
-- [Contributing](#contributing)
-
 ## Getting Started
-
-### Prerequisites
 
 - Unity 2019.3 or later
 - Your favorite code editor (e.g., Visual Studio)
